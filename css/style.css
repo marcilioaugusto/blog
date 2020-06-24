@@ -1,0 +1,219 @@
+/* Configuraçoes gerais do blog */
+body,
+ul,
+li,
+i,
+a {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.row{
+    padding: 30px 0;
+}
+
+
+img{
+    border-radius: 5px;
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 0px;
+    color: black;
+    font-size: 1em;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: red;
+    padding: 15px 0px;
+}
+
+
+/* Editando o topo da pagina */
+header {
+    background-color: #202020;
+    box-sizing: border-box;
+    margin: 0px 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Editando logo e  menu do header */
+
+/* editando logo */
+header>a>img {
+    border-radius: 10px;
+    display: block;
+    height: auto;
+    width: 150px;
+}
+
+header>a>img:hover {
+    border: solid wheat;
+}
+
+/* editando itens do menu (sobre e contato) */
+header>nav>ul {
+    display: flex;
+}
+
+header>nav>ul>li>a {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    margin: 0px 15px;
+    padding: 20px 20px;
+    border: white solid;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header>nav>ul>li>a:hover {
+    background-color: white;
+    color: #0f0f0ff3;
+    font-size: 22px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+/* Main Incluindo o article , sessoes e aside  */
+main {
+    background-color: #c7c7c74d;
+    padding:0px 20px
+    
+}
+
+
+/* main header configuraões */
+
+/* Imagem Background  */
+.main-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/laptop.jpg);
+    background-color: #cccccc;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-attachment: initial;  
+    background-position: center; 
+    background-size: cover;
+}
+/* background na area central segurando o botão,link */
+.header-main-bg{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: rgb(173, 173, 173) solid;
+    margin: 0px;
+    padding: 1% 8%;
+    opacity: 0.8;
+    box-shadow: black;
+    border-radius: 15px;
+    
+}
+/* link é um botao */
+.main-bg>div>a{
+    display: flex;
+    justify-content: center;
+    padding: 10 100px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20px;
+    border: solid white;
+    border-radius: 20px;
+} 
+.main-bg>div>a:hover{
+    background-color: red;
+    color: white;
+}
+
+
+/* Conteudo Main Seção esquerda */
+.main-section{
+    display: flex;
+    flex-direction: column;
+
+}    
+
+.main-section>img{
+    max-width: 100%
+}
+.continue{
+    display: flex;
+    justify-content: center;
+}
+.continue>a{
+    background-color: red;
+    padding: 20px;
+    color: white;
+    border: solid;
+    border-radius: 10px;
+}
+
+#voltarTopo{
+    display: flex;
+    align-items: center;
+
+}
+#voltarTopo>a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+/* Edita*/
+.main-aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.main-aside>h1{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+
+}
+
+.main-aside>img{
+    width: 100%;
+}
+
+hr{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid;
+    color: black;
+    margin-bottom: 20px;
+    width: 50px;
+}
+
+
+@media only screen and (max-width:600px){
+
+    header{
+        justify-content: center;
+    }
+
+    .menu-info{
+        display: none;
+    }
+
+    .xs-colunn{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
