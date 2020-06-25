@@ -10,24 +10,27 @@ a {
 }
 
 .row{
-    padding: 30px 0;
+    padding: 0px 0 30px 0;
 }
-
 
 img{
     border-radius: 5px;
 }
-
-h4{
+h1{
+    text-align: center;
+    font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 15px 0px;
-    color: black;
-    font-size: 1em;
+    padding-bottom: 20px;
 }
+
+h3{
+    padding: 0px 0 15 0px;
+    color: red;
+}
+
 p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    color: red;
     padding: 15px 0px;
 }
 
@@ -107,6 +110,7 @@ main {
     background-attachment: initial;  
     background-position: center; 
     background-size: cover;
+    margin-bottom: 30px;
 }
 /* background na area central segurando o botão,link */
 .header-main-bg{
@@ -160,6 +164,9 @@ main {
     border: solid;
     border-radius: 10px;
 }
+.continue>a:hover{
+    border: solid black;
+}
 
 #voltarTopo{
     display: flex;
@@ -172,7 +179,7 @@ main {
     color: black;
 }
 
-/* Edita*/
+/* Edita Conteudo a Direita do Main(ASIDE)*/
 .main-aside{
     display: flex;
     flex-direction: column;
@@ -200,8 +207,144 @@ hr{
     width: 50px;
 }
 
+/* Formulario */
+.form{
+    display: flex;
+    align-items: center;
+}
+fieldset{ border:none;}
 
+fieldset>input{
+    border-radius: 50px;
+    margin: 5 10px;
+   
+}
+#email{
+    display: flex;
+    padding: 17px;
+    width: 126px;
+    text-align: center;
+    border: white solid;
+}
+#enviar{
+    color: white;
+    padding: 17px 43px;
+    background-color: red;
+    border: solid red;
+}
+#enviar:hover{
+    border: black solid;
+    cursor: pointer;
+}
+
+/* Icones abaixo do texto */
+.icons-section{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    border-top: rgb(199, 199, 199) solid 2px;
+    border-bottom: rgb(199, 199, 199) solid 2px;
+}
+.icons-section>a>i{
+    display: flex;
+    padding: 10 20 20 0px;
+    text-decoration: none;
+    color: black;
+}
+/* icones na lateral*/
+.icons{
+    display: flex;
+    margin: 0px 0px;
+}
+.icons>a>i{
+    display: flex;
+    padding: 0px 0 40px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.img-50{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-50>img{
+    margin-top: 20px;
+    width: 50%;
+    padding-bottom: 20px;
+}
+.img-50>h1{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: solid black;
+}
+
+/* Footer Formulario e Botao */
+.form-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-footer>fieldset{ border:none;}
+
+.form-footer>fieldset>input{
+    border-radius: 50px;
+    margin: 5 10px;
+   
+}
+#email-footer{
+    display: flex;
+    padding: 17px;
+    width: 350px;
+    text-align: center;
+    border: solid black;
+}
+#enviar-footer{
+    color: white;
+    padding: 17px 154px;
+    background-color: red;
+    border: solid red;
+}
+#enviar-footer:hover{
+    border: black solid;
+    cursor: pointer;
+}
+#bt-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bt-top>a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 0 5px;
+}
+#bt-top>a>i{
+    padding: 0 7px;
+}
+
+.mg-footer{
+    margin-top: 20px;
+}
 @media only screen and (max-width:600px){
+
+    h3{
+        text-align: center;
+    }
+
+    .icons{display: none;}
+
+    #voltarTopo{
+        display: flex;
+        justify-content: center;
+        padding: 10 0 50px 0px ;
+    }
+
+    .icons-section{
+        justify-content: center;
+    }
+
 
     header{
         justify-content: center;
